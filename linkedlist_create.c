@@ -49,23 +49,17 @@ void traverse() {
         printf("The list is empty.\n");
         return;
     }
-
     printf("The linked list elements are: ");
     while (temp != NULL) {
         printf("%d ", temp->data);
         temp = temp->next;
     }
-
 }
-
 int main() {
     int n;
-
     printf("Enter the number of nodes to be inserted: ");
     scanf("%d", &n);
-
     create(n);
     traverse();
-
     return 0;
 }
